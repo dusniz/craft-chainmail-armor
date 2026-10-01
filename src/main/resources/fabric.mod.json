@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "craft-chainmail-armor",
+	"version": "${version}",
+	"name": "Craft chainmail armor!",
+	"description": "Simple mode to add chainmail armor craft.",
+	"authors": [
+		"dusn1z"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/craft-chainmail-armor/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ru.dusn1z.CraftChainmailArmor"
+		],
+		"client": [
+			"ru.dusn1z.client.CraftChainmailArmorClient"
+		],
+		"fabric-datagen": [
+			"ru.dusn1z.client.CraftChainmailArmorDataGenerator"
+		]
+	},
+	"mixins": [
+		"craft-chainmail-armor.mixins.json",
+		{
+			"config": "craft-chainmail-armor.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

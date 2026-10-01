@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": "craft-chainmail-armor:chainmesh"
+  },
+  "result": {
+    "id": "minecraft:chainmail_boots"
+  }
+}
